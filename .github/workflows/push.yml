@@ -1,7 +1,10 @@
 name: Deploy de la pagina
-on: [push]
+on:
+  push:
+    branches:
+      - main
 jobs:
-  build-and-deploy:
+  deploy page:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
